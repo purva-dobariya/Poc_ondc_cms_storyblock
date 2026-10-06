@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - ONDC CMS POC</title>
+    <title>About - ONDC Storyblok POC</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-slug="about">
 
-    <!-- Header -->
+    <!-- Header (static, not managed by Storyblok) -->
     <header class="header">
         <div class="container nav">
             <div class="logo">ONDC</div>
@@ -21,71 +21,19 @@
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div data-editable="source" data-path="/about.html" data-key="page-hero">
-            <p>ABOUT US</p>
+    <!-- Page content is loaded from Storyblok by js/app.js -->
+    <main id="app">
+        <p class="loading">Loading content from Storyblok...</p>
+    </main>
 
-            <h1>About ONDC</h1>
-
-            <p>
-                Learn about the vision behind the Open Network for
-                Digital Commerce.
-            </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="section">
-        <div class="container about-content">
-
-            <div data-editable="source" data-path="/about.html" data-key="vision">
-                <p>OUR VISION</p>
-
-                <h2>An open network for digital commerce</h2>
-
-                <p>
-                    The Open Network for Digital Commerce is an initiative
-                    designed to democratize digital commerce and create
-                    opportunities for businesses of different sizes.
-                </p>
-
-                <p>
-                    Instead of requiring buyers and sellers to use the
-                    same application, an open network allows different
-                    participants to connect and interact.
-                </p>
-
-                <p>
-                    This creates a more interoperable and competitive
-                    digital commerce ecosystem.
-                </p>
-            </div>
-
-            <div class="info-box" data-editable="source" data-path="/about.html" data-key="info-box">
-                <h3>What ONDC enables</h3>
-
-                <ul>
-                    <li>Open participation</li>
-                    <li>Interoperability</li>
-                    <li>Greater discoverability</li>
-                    <li>More choices for consumers</li>
-                    <li>Opportunities for businesses</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer (static, not managed by Storyblok) -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 ONDC CMS POC</p>
+            <p>&copy; 2026 ONDC CMS POC</p>
         </div>
     </footer>
 
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
-

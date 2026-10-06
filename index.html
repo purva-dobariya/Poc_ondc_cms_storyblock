@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONDC CMS POC</title>
+    <title>ONDC Storyblok POC</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-slug="home">
 
-    <!-- Header -->
+    <!-- Header (static, not managed by Storyblok) -->
     <header class="header">
         <div class="container nav">
             <div class="logo">ONDC</div>
@@ -21,99 +21,19 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div>
-                <div data-editable="source" data-path="/index.html" data-key="hero-text">
-                <p>OPEN NETWORK FOR DIGITAL COMMERCE</p>
-                <h1> Building an open, inclusive digital commerce ecosystem. Just for testing purpose.</h1>
-                <p> ONDC is transforming digital commerce by enabling <em><strong>buyers and sellers to</strong></em> connect across different platforms through an open network. </p>
-                </div>
+    <!-- Page content is loaded from Storyblok by js/app.js -->
+    <main id="app">
+        <p class="loading">Loading content from Storyblok...</p>
+    </main>
 
-                <a href="about.html" class="button">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Image Section -->
-    <section class="section image-section">
-        <div class="container">
-            <div class="image-block" data-editable="source" data-path="/index.html" data-key="home-image">
-                <p><img src="images/hero.jpg" alt="ONDC hero image"></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Introduction -->
-    <section class="section">
-        <div class="container">
-            <div data-editable="source" data-path="/index.html" data-key="intro">
-            <p>ABOUT ONDC</p>
-
-            <h2>Making digital commerce more accessible</h2>
-
-            <p>
-                The Open Network for Digital Commerce enables
-                interoperability between different applications and
-                service providers.
-            </p>
-            </div>
-
-            <div class="cards">
-
-                <div class="card" data-editable="source" data-path="/index.html" data-key="card-1">
-                    <h3>Open Network for just test</h3>
-                    <p> Connect buyers and sellers across different applications through an open network. </p>
-                </div>
-
-                <div class="card" data-editable="source" data-path="/index.html" data-key="card-2">
-                    <h3>Inclusive Commerce</h3>
-                    <p>
-                        Enable businesses of different sizes to
-                        participate in digital commerce.
-                    </p>
-                </div>
-
-                <div class="card" data-editable="source" data-path="/index.html" data-key="card-3">
-                    <h3>Interoperability</h3>
-                    <p>
-                        Allow different platforms to communicate and
-                        transact with each other.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <div data-editable="source" data-path="/index.html" data-key="cta">
-            <h2>Explore the ONDC ecosystem</h2>
-
-            <p>
-                Learn more about the network, participants and
-                opportunities to build on ONDC.
-            </p>
-            </div>
-
-            <a href="about.html" class="button button-light">
-                Explore
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer (static, not managed by Storyblok) -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 ONDC CMS POC</p>
+            <p>&copy; 2026 ONDC CMS POC</p>
         </div>
     </footer>
 
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
-
