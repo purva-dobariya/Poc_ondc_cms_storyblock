@@ -7,6 +7,6 @@
 //            Canada       -> https://api-ca.storyblok.com
 //            Asia-Pacific -> https://api-ap.storyblok.com
 window.STORYBLOK_CONFIG = {
-    token: "PASTE_YOUR_PREVIEW_TOKEN_HERE",
+    token: "5vFWTpEvdizEzudl9kq1Lgtt",
     apiBase: "https://api.storyblok.com"
 };
